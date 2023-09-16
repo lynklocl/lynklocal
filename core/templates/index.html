@@ -1,0 +1,604 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lynk Local</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Lynk Local is one of the newest leading all-in-one app that connect homeowners searching for local home repairs to top quality prescreened local service providers as well as other services.">
+    <meta name="keywords" content="LynkLocal, Lynk Local, Lynk Local US United States, handyman service, TV mounting, plumbing, home repairs, renovations, carpet cleaning, AC installation, lawn care, expert services, innovative solutions">
+
+    <meta name="author" content="DevDynamics">
+
+    <meta property="og:title" content="Lynk Local">
+    <meta property="og:description" content="Lynk Local is one of the newest leading all-in-one app that connect homeowners searching for local home repairs to top quality prescreened local service providers as well as other services.">
+    <meta property="og:image" content="{% static 'img/logo.png' %}">
+    <meta property="og:url" content="https://www.lynklocal.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:title" content="Lynk Local">
+    <meta name="twitter:description" content="Lynk Local is one of the newest leading all-in-one app that connect homeowners searching for local home repairs to top quality prescreened local service providers as well as other services.">
+    <meta name="twitter:image" content="{% static 'img/logo.png' %}">
+    <meta name="twitter:card" content="{% static 'img/logo.png' %}">
+
+    <!-- Favicon -->
+    <link href="{% static "img/logo.png" %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+</head>
+<style>
+  .preloader-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+  }
+</style>
+
+<style>
+    .image-container {
+      width: 100%; 
+      padding-top: 56.25%;
+      position: relative;
+    }
+
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div class="preloader-overlay">
+          <i class="fas fa-spinner fa-spin" style="font-size: 100px; color: #61bf1a;"></i>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div id="top"></div>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-1 px-lg-2 py-lg-0 shadow-sm" style="top: 0px;">
+            <a href="/" class="navbar-brand">
+                <h1 class="m-0 text-primary"><img src="{% static "img/logo.png" %}" alt="" style="width: 70px; height: 70px;"> Lynk Local</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto px-4 px-lg-5">
+                    <a href="#top" class="nav-item nav-link" style="cursor: pointer;">Home</a>
+                    <a href="#about_us" class="nav-item nav-link" style="cursor: pointer;">About Us</a>
+                    <a href="#our_services" class="nav-item nav-link" style="cursor: pointer;">Our Services</a>
+                    <a href="#testimonials" class="nav-item nav-link" style="cursor: pointer;">Testimonials</a>
+                    <a href="#contact_us" class="nav-item nav-link" style="cursor: pointer;">Contact Us</a>
+                </div>
+                <a href="#contact_us" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <div class="image-container">
+          <img src="{% static "img/banner.png" %}" alt="Responsive Image">
+        </div>
+
+        <br>
+        <!-- About Start -->
+        <div id="about_us"></div>
+        <div class="container-xxl py-5" >
+          <div class="container">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <h1 class="mb-4">Learn more about our all in one app solution</h1>
+                        <p>
+                            Lynk Local is one of the newest leading all-in-one app that connect homeowners searching for local home repairs to top quality prescreened local service providers as well as other services.
+                        </p>
+                        <p class="mb-4">
+                            <p>We instantly match thousands of customers and local handyman pros weekly.</p>
+
+                            <p>Looking to promote or advertise your business, post community events, and use our free buy/sell classified Your request is our prority.</p>
+
+                            Create a Free Account
+                        </p>
+                  </div>
+                  <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img class="img-fluid rounded-circle bg-light p-3" src="{% static "img/painting.webp" %}" alt="" style="width: 80%; height:200px; max-width: 300px;">
+                        </div>
+                        <div class="col-6 text-start" style="margin-top: -80px;">
+                            <img class="img-fluid rounded-circle bg-light p-3" src="{% static "img/tv_mounting.jpg" %}" alt="" style="height:150px; width: 300px;">
+                        </div>
+                        <div class="col-6 text-end" style="margin-top: -80px;">
+                            <img class="img-fluid rounded-circle bg-light p-3" src="{% static "img/plumbing.webp" %}" alt="" style="height:150px; width: 300px;">
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Our Services -->
+        <div id="our_services"></div>
+        <div class="container-xxl py-5">
+          <div class="container">
+              <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                  <h1 class="mb-3">Our Services</h1>
+                  <p>At Lynk Local, we pride ourselves on being your comprehensive solution for all your handyman needs. Explore our extensive array of services:</p>
+              </div>
+              <div class="row g-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="facility-item">
+                          <div class="facility-icon bg-primary">
+                              <span class="bg-primary"></span>
+                              <i class="fa fa-wrench fa-3x text-primary"></i>
+                              <span class="bg-primary"></span>
+                          </div>
+                          <div class="facility-text bg-primary">
+                              <h3 class="text-primary mb-3">Home Repairs</h3>
+                              <p class="mb-0">From fixing leaky faucets to repairing drywall, we can help with all your home repair needs.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="facility-item">
+                          <div class="facility-icon bg-success">
+                              <span class="bg-success"></span>
+                              <i class="fa fa-search fa-3x text-success"></i>
+                              <span class="bg-success"></span>
+                          </div>
+                          <div class="facility-text bg-success">
+                              <h3 class="text-success mb-3">Find a Local Expert</h3>
+                              <p class="mb-0">Discover skilled local professionals ready to help you.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
+                      <div class="facility-item">
+                          <div class="facility-icon bg-primary">
+                              <span class="bg-primary"></span>
+                              <i class="fas fa-bullhorn fa-3x text-primary"></i>
+                              <span class="bg-primary"></span>
+                          </div>
+                          <div class="facility-text bg-primary">
+                              <h3 class="text-primary mb-3">Advertise Your Business Locally</h3>
+                              <p class="mb-0">Promote your business within your community and reach more customers.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br><br>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa fa-user-plus fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Sign Up as Handyman PRO</h3>
+                                <p class="mb-0">Join our network of skilled professionals and offer your services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa fa-calendar-alt fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Post Community Events</h3>
+                                <p class="mb-0">Share local happenings and connect with your neighbors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fas fa-shopping-cart fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Buy/Sell Classified</h3>
+                                <p class="mb-0">Trade goods and services within your community easily.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+      <!-- Our Services End -->
+
+        <!-- Carousel Start -->
+        <div style="text-align: center;"><h1 class="mb-4">Our Handy Man Pros Expertise</h1></div>
+        <div class="container-fluid p-0 mb-5">
+          <div class="owl-carousel header-carousel position-relative">
+              <div class="owl-carousel-item position-relative">
+                  <img class="img-fluid" src="{% static "img/carpet_cleaning.jpg" %}" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                      <div class="container">
+                          <div class="row justify-content-start">
+                              <div class="col-10 col-lg-8">
+                                  <h1 class="display-2 text-white animated slideInDown mb-4">Carpet Cleaning</h1>
+                                  <p class="fs-5 fw-medium text-white mb-4 pb-2">Reviving Carpets, One Clean at a Time</p>
+                                  <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Schedule Cleaning</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                  <img class="img-fluid" src="{% static "img/plumbing.webp" %}" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                      <div class="container">
+                          <div class="row justify-content-start">
+                              <div class="col-10 col-lg-8">
+                                  <h1 class="display-2 text-white animated slideInDown mb-4">Plumbing</h1>
+                                  <p class="fs-5 fw-medium text-white mb-4 pb-2">Expert Plumbing Solutions</p>
+                                  <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Book Plumbing Services</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static "img/painting.webp" %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown mb-4">Painting</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Transforming Spaces with Colors</p>
+                                <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Request a Paint Job</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static "img/ac_repair.webp" %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown mb-4">AC Installation & Repair</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Cool Comfort, Always Reliable</p>
+                                <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Get AC Solutions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static "img/tv_mounting.jpg" %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown mb-4">TV Mounting</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Elevate Your Entertainment</p>
+                                <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Mount My TV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static "img/lawn_care.webp" %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown mb-4">Lawn Care</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Lush Lawns, Greener Tomorrows</p>
+                                <a href="#contact_us" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Transform My Lawn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Carousel End -->
+
+
+
+        <!-- Contact Us Start -->
+        <div id="contact_us"></div>
+        <div class="container-xxl py-5">
+            <div>
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100 rounded" src="{% static 'img/about-1.jpg' %}" style="object-fit: cover;">
+                        </div>
+                      </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Contact Us</h1>
+                                <form id="contactForm">
+                                  {% csrf_token %}
+                                    <div class="row g-3">
+                                        <div class="col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="gname" name="name" placeholder="Name" required>
+                                                <label for="gname">Name/Company</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="homeownerCheckbox" name="userType" value="Homeowner" required>
+                                                <label class="form-check-label" for="homeownerCheckbox">Homeowner</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="companyCheckbox" name="userType" value="Service Provider Company" required>
+                                                <label class="form-check-label" for="companyCheckbox">Service Provider Company</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="gmail" name="email" placeholder="Email" required>
+                                                <label for="gmail">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="cname" name="phone_number" placeholder="Phone Number" required>
+                                                <label for="cname">Phone Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" name="message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="findProsRadio" name="registrationOption" value="Find Handyman Pros" required>
+                                                <label class="form-check-label" for="findProsRadio">Find Handyman Pros</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="signupProRadio" name="registrationOption" value="Sign Up as Handyman Pro" required>
+                                                <label class="form-check-label" for="signupProRadio">Sign Up as Handyman Pro</label>
+                                            </div>
+                                        </div>
+                                                                              
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us End -->
+
+        <!-- Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      Message successfully sent.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: #61bf1a; color: white;" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Error Modal -->
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="errorModalLabel">Error!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      Message wasn't sent. Please try again.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: #61bf1a; color: white;" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+        <!-- Testimonial Start -->
+        <div id="testimonials"></div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>Discover what our valued clients have to say about their Lynk Local experience. Their feedback speaks to our commitment to excellence in every project.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">LynkLocal is a game-changer for The Lead Navigator Group. Their expertise in customer acquisition is unmatched. Highly impressed!</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static "img/testimonial-1.jpg" %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Tonia James</h3>
+                                <span>The Lead Navigator Group (Company)</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Outstanding service! LynkLocal's home repair team transformed my house. Quick response, skilled professionals, and top-notch results. Highly recommend!</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static "img/testimonial-5.jpg" %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Johnnie Davis</h3>
+                                <span>Home Repair</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">LynkLocal's free marketplace made selling my furniture a breeze! Quick and hassle-free experience. Thanks, LynkLocal!</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static "img/testimonial-3.jpg" %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Scott Keran</h3>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><a href="tel:{{lynk_local.phone_number}}" style="text-decoration:none; color:#FFF5F3;"><i class="fa fa-map-marker-alt me-3"></i> {{lynk_local.address}}</a></p>
+                        <p class="mb-2"><a href="tel:{{lynk_local.phone_number}}" style="text-decoration:none; color:#FFF5F3;"><i class="fa fa-phone-alt me-3"></i> {{lynk_local.phone_number}}</a></p>
+                        <p class="mb-2"><a href="mailto:{{lynk_local.email}}" style="text-decoration:none; color:#FFF5F3;"><i class="fa fa-envelope me-3"></i> {{lynk_local.email}}</a></p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.twitter.com/{{lynk_local.x_username}}/"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank"  href="https://www.facebook.com/{{lynk_local.facebook_username}}/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank"  href="https://www.instagram.com/{{lynk_local.instagram_username}}/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank"  href="https://www.pinterest.ca/{{lynk_local.pinterest_username}}/"><i class="fab fa-pinterest"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank"  href="https://www.linkedin.com/company/{{lynk_local.linkedin_username}}/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Lynk Local</a>, All Right Reserved.
+                            <br>
+							          Designed and Developed by <a class="border-bottom" target="_blank"  href="https://www.fiverr.com/islamsanni">DevDynamics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top-of-page"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript for Form Submission -->
+  <script>
+    $(document).ready(function () {
+        $("#contactForm").submit(function (e) {
+            e.preventDefault();
+            $(".preloader-overlay").show();
+
+            var formData = $(this).serializeArray();
+            formData.push({ name: 'csrfmiddlewaretoken', value: $('input[name=csrfmiddlewaretoken]').val() });
+
+            $.ajax({
+                type: "POST",
+                url: "{% url 'contact_form_submission' %}",
+                data: formData,
+                success: function (response) {
+                  $(".preloader-overlay").hide();
+                    $('#successModal').modal('show');
+                    $("#contactForm")[0].reset();
+                },
+                error: function (error) {
+                  $(".preloader-overlay").hide();
+                    $('#errorModal').modal('show');
+                }
+            });
+        });
+    });
+  </script>
+
+  <!--Preloader-->
+  <script>
+    $(document).ready(function () {
+        $(".preloader-overlay").hide();
+      });
+
+    function showPreloader(event) {
+        if (navigator.onLine) {
+          $(".preloader-overlay").show();
+      
+          window.onpageshow = function(event) {
+            if (event.persisted) {
+              $(".preloader-overlay").hide();
+            }
+          };
+        } else {
+          alert("You are currently offline. Please check your internet connection.");
+          event.preventDefault();
+        }
+    }
+  </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static "lib/wow/wow.min.js" %}"></script>
+    <script src="{% static "lib/easing/easing.min.js" %}"></script>
+    <script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+    <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>
