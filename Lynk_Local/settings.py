@@ -79,7 +79,7 @@ SERVER_EMAIL = 'lynkslocal@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_PORT = 587
 EMAIL_HOST_USER = 'lynkslocal@gmail.com'
-EMAIL_HOST_PASSWORD = 'tnpyoevqunaqxltp'
+EMAIL_HOST_PASSWORD = 'sppqbjbiiocgdwmw'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 
