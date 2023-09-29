@@ -38,9 +38,14 @@
     <p>If you have any questions or need immediate assistance, please contact us at {{lynk_local_phone_number}}.</p>
 
     <p>Name/Company: {{name}}</p>
+    <p>User Type: {{user_type}}</p>
     <p>Email: {{email}}</p>
     <p>Phone Number: {{phone_number}}</p>
     <p>Message: {{message}}</p>
+    {% if free_quote %}
+      <p style="background-color: #61bf1a;color: #ffffff; padding: 4px 8px; border-radius: 5px;">{{name}} requested a Free Quote!</p>
+    {% endif %}
+    <p>Form Purpose: {{form_purpose}}</p>
     <p>Best Regards,</p>
     <p>The Lynk Local Team</p>
     <a href="https://lynklocal.com/" class="cta-button">Visit Website</a>

@@ -367,11 +367,11 @@
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="homeownerCheckbox" name="userType" value="Homeowner" required>
+                                                <input class="form-check-input" type="radio" id="homeownerCheckbox" name="user_type" value="Homeowner" required>
                                                 <label class="form-check-label" for="homeownerCheckbox">Homeowner</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="companyCheckbox" name="userType" value="Service Provider Company" required>
+                                                <input class="form-check-input" type="radio" id="companyCheckbox" name="user_type" value="Service Provider Company" required>
                                                 <label class="form-check-label" for="companyCheckbox">Service Provider Company</label>
                                             </div>
                                         </div>
@@ -388,6 +388,12 @@
                                                 <label for="cname">Phone Number</label>
                                             </div>
                                         </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="requestFreeQuoteCheckbox" name="free_quote" value="Requested a Free Quote.">
+                                                <label class="form-check-label" for="requestFreeQuoteCheckbox">Request Free Quote</label>
+                                            </div>
+                                        </div>
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <textarea class="form-control border-0" name="message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
@@ -396,11 +402,11 @@
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="findProsRadio" name="registrationOption" value="Find Handyman Pros" required>
+                                                <input class="form-check-input" type="radio" id="findProsRadio" name="form_purpose" value="Find Handyman Pros" required>
                                                 <label class="form-check-label" for="findProsRadio">Find Handyman Pros</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="signupProRadio" name="registrationOption" value="Sign Up as Handyman Pro" required>
+                                                <input class="form-check-input" type="radio" id="signupProRadio" name="form_purpose" value="Sign Up as Handyman Pro" required>
                                                 <label class="form-check-label" for="signupProRadio">Sign Up as Handyman Pro</label>
                                             </div>
                                         </div>
@@ -468,7 +474,7 @@
                     <div class="testimonial-item bg-light rounded p-5">
                         <p class="fs-5">LynkLocal is a game-changer for The Lead Navigator Group. Their expertise in customer acquisition is unmatched. Highly impressed!</p>
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static "img/testimonial-1.jpg" %}" style="width: 90px; height: 90px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static "img/testimonial-2.jpg" %}" style="width: 90px; height: 90px;">
                             <div class="ps-3">
                                 <h3 class="mb-1">Tonia James</h3>
                                 <span>The Lead Navigator Group (Company)</span>

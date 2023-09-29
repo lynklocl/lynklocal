@@ -16,16 +16,18 @@ def contact_form_submission(request):
         email = request.POST.get('email')
         phone_number = request.POST.get('phone_number')
         message = request.POST.get('message')
-        registrationOption = request.POST.get('registrationOption')
-        userType = request.POST.get('userType')
+        form_purpose = request.POST.get('form_purpose')
+        user_type = request.POST.get('user_type')
+        free_quote = request.POST.get('free_quote')
 
         contact_form = Contact_Form_Submission(
             name = name,
             email = email,
             phone_number = phone_number,
             message = message,
-            registrationOption = registrationOption,
-            userType = userType,
+            user_type = user_type,
+            form_purpose = form_purpose,
+            free_quote = free_quote,
         )
        
         contact_form.save()
@@ -39,10 +41,13 @@ def contact_form_submission(request):
             'phone_number': phone_number,
             'message': message,
             'lynk_local_phone_number' : lynk_local.phone_number,
+            'form_purpose': form_purpose,
+            'user_type': user_type,
+            'free_quote': free_quote,
         })
 
         # Send the email
-        msg = EmailMessage(email_subject, email_body, to=[email, 'lynklocal@gmail.com'])
+        msg = EmailMessage(email_subject, email_body, to=[email, 'lynkslocal@gmail.com'])
         msg.content_subtype = 'html'
         msg.send()
 

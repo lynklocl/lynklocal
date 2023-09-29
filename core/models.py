@@ -15,12 +15,13 @@ class LynkLocal(models.Model):
 
 
 class Contact_Form_Submission(models.Model):
-    name = models.CharField(max_length=10000, null=True, blank=True)
-    phone_number = models.CharField(max_length=10000, null=True, blank=True)
-    email = models.CharField(max_length=10000, null=True, blank=True)
-    userType = models.CharField(max_length=10000, null=True, blank=True)
-    registrationOption = models.CharField(max_length=10000, null=True, blank=True)
+    name = models.CharField(max_length=10000)
+    phone_number = models.CharField(max_length=10000)
+    email = models.CharField(max_length=10000)
+    user_type = models.CharField(max_length=10000)
+    form_purpose = models.CharField(max_length=10000)
+    free_quote = models.CharField(max_length=10000, null=True, blank=True)
     message = models.TextField()
 
     def __str__(self):
-        return self.userType
+        return f"{self.user_type} - {self.name}"

@@ -3,7 +3,7 @@ from .models import LynkLocal, Contact_Form_Submission
 # Register your models here.
 class Contact_Filter(admin.ModelAdmin): 
     search_fields = ('name',)
-    list_filter = ('userType','registrationOption')
+    list_filter = ('user_type','form_purpose', 'free_quote')
 
 
 admin.site.register(LynkLocal)
